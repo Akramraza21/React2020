@@ -1,6 +1,9 @@
 import React from 'react'
 
-const Contact = () => {
+const Contact = (props) => {
+    // console.log(props)
+    // props data is added from react router dom, BrowserRouter added the props property
+    setTimeout(()=>{props.history.push("/about")},3000)
     return (
         <div className="container">
             <h4 className="center">Contact</h4>
