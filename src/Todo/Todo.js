@@ -1,5 +1,5 @@
 import React from 'react'
-
+import RandomColour from '../HOC/RandomColor'
 const TodoCreater = ( props ) => {
     
     const todo =  props.state.length ? props.state.map((value, index)=> {
@@ -16,4 +16,4 @@ const TodoCreater = ( props ) => {
     </div>
     )
 }
-export default TodoCreater;
+export default RandomColour(TodoCreater);
