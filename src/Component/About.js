@@ -1,5 +1,5 @@
 import React from 'react'
-
+import RigidColor from '../HOC/RigidColor'
 const About = () => {
     return (
         <div className="container">
@@ -17,4 +17,4 @@ const About = () => {
 
     )
 }
-export default About;
+export default RigidColor(About);

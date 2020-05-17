@@ -8,9 +8,6 @@ import {Link, NavLink} from 'react-router-dom'
 
   
 const Navbar = () => {
-    const style = {
-            "background-color":"yellow"
-    } 
     return (
         <nav className="nav-wrapper red darken-3">
             <div className="container">
