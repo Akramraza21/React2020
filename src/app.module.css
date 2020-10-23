@@ -1,0 +1,35 @@
+.button{
+    margin: 20px;
+    padding: 10px 20px;
+}
+.button:hover{
+    cursor: pointer;
+}
+.outter{
+    display: flex;
+    justify-content: space-around;
+}
+.image{
+    width: 20px;
+    height: 20px;
+}
+.arrow{  
+    width: 0px;
+    height: 0px;
+    border-top: 60px solid transparent;
+    border-bottom: 60px solid transparent;
+    border-left: 60px solid rgb(61, 112, 160);
+    display: inline;
+    position: relative;
+    left: 28px;
+    bottom: 63px;
+    cursor: pointer;
+    }
+.dImage{
+    float: right;
+    margin-right: 100px;
+}
+.imageDiv{
+    border: 1px solid black;
+    width: 500px;
+}
