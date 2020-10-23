@@ -17,6 +17,7 @@ function App() {
   }
   let teamHandler =  () => {
     setShow(false)
+    setArrow(false)
   }
   const fbClicked = () => {
     let  data = fb
