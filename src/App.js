@@ -18,6 +18,10 @@ function App() {
   let teamHandler =  () => {
     setShow(false)
     setArrow(false)
+    setYt(false)
+    setFb(false)
+    setTw(false)
+    setRd(false)
   }
   const fbClicked = () => {
     let  data = fb
@@ -36,8 +40,8 @@ function App() {
     setRd(!data)
   }
   const arrowChange = () =>{
-    let data = arrow
-    setArrow(!data)
+  
+    setArrow(true)
   }
 
     // useEffect(() => {
