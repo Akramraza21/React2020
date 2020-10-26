@@ -1,7 +1,7 @@
-import React,{useEffect,useState} from 'react';
+import React,{useState} from 'react';
 import classes from "./app.module.css"
 import './App.css';
-import axios from 'axios';
+import Graphs from './component/graph'
 
 function App() {
   const [show,setShow] = useState(false)
@@ -10,7 +10,7 @@ function App() {
   const [yt,setYt] = useState(false)
   const [rd,setRd] = useState(false)
   const [arrow,setArrow] = useState(false)
-  const [data,setData] = useState("")
+  // const [data,setData] = useState("")
 
   let sourceHandler = () => {
     setShow(true)
@@ -79,6 +79,10 @@ function App() {
       </div> :null}
       
     </div>
+    <br />
+    <br />
+    <br />
+    <Graphs />
   </React.Fragment>
   );
 }
