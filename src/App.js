@@ -45,7 +45,7 @@ const loginHandler = () => {
   console.log(email,password)
   axios.post("/api/login",{"email":email,"password":password})
   .then(resp=>{
-    if (resp.statusText = "OK" ){
+    if (resp.statusText === "OK" ){
       setLogin(true)
     }
     else {
@@ -58,7 +58,7 @@ const loginHandler = () => {
 const registerUser = () => {
    axios.post(`/api/register`,{"email":email,"password":password})
   .then(resp=>{
-    if (resp.statusText = "OK" ){
+    if (resp.statusText === "OK" ){
       setReg(true)
     }
     else {
@@ -72,7 +72,7 @@ const registerUser = () => {
   const RegisterUser = () => {
     return (
       <div>
-        <input type="text" id="email" onChange={changeHandler} /> <br />
+        <input type="text" id="email" value={email} onChange={changeHandler} /> <br />
         <input type="password" id="password" onChange={changeHandler} /> <br />
         <button onClick={registerUser}>Register</button>
         {reg?<p>Register successful</p>:null}
@@ -82,7 +82,7 @@ const registerUser = () => {
   const LoginUser = () => {
     return(
       <div>
-        <input type="text" id="email" onChange={changeHandler} /> <br />
+        <input type="text" id="email" value={email}  onChange={changeHandler} /> <br />
         <input type="password" id="password" onChange={changeHandler} /> <br />
         <button onClick={loginHandler}>Login</button>   
         {login? <p>Login successful</p>:null}
