@@ -72,7 +72,7 @@ const registerUser = () => {
   const RegisterUser = () => {
     return (
       <div>
-        <input type="text" id="email" value={email} onChange={changeHandler} /> <br />
+        <input type="text" id="email"  onChange={changeHandler} /> <br />
         <input type="password" id="password" onChange={changeHandler} /> <br />
         <button onClick={registerUser}>Register</button>
         {reg?<p>Register successful</p>:null}
@@ -82,7 +82,7 @@ const registerUser = () => {
   const LoginUser = () => {
     return(
       <div>
-        <input type="text" id="email" value={email}  onChange={changeHandler} /> <br />
+        <input type="text" id="email" onChange={changeHandler} /> <br />
         <input type="password" id="password" onChange={changeHandler} /> <br />
         <button onClick={loginHandler}>Login</button>   
         {login? <p>Login successful</p>:null}
